@@ -17,9 +17,6 @@ void loop() {
   digitalWrite(trigPin, HIGH);
   delayMicroseconds(10);
   digitalWrite(trigPin, LOW);
-  
- //Echo Pin als input nehmen
-  pinMode(echoPin, INPUT);
 
   //zeit die vergeht bis das signal ankommt (0 - 255)
   duration = pulseIn(echoPin, HIGH);
